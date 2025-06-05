@@ -1,0 +1,4 @@
+riscv-gnu-toolchain
+.vscode/
+wshop-se/
+*.log

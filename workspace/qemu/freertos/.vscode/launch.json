@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to QEMU (RISC-V)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/FreeRTOS/FreeRTOS/Demo/RISC-V_RV32_QEMU_VIRT_GCC/build/gcc/output/RTOSDemo.elf",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/workspace/riscv-tools/main/bin/riscv64-unknown-elf-gdb",
+      "miDebuggerServerAddress": "localhost:1234",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Run QEMU (RISC-V User-Mode)"
+    }
+  ]
+}
